@@ -12,3 +12,5 @@
 :set backspace=indent,eol,start
 "If forget make sudo before open a file
 cmap w!! w !sudo tee > /dev/null %	
+" Tab spaces
+set tabstop=4 
