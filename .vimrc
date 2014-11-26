@@ -1,3 +1,5 @@
+"Syntaxis mode on
+:syntax on
 " Show line numbers
 :set nu					
 " Auto-ident new lines
@@ -14,3 +16,6 @@
 cmap w!! w !sudo tee > /dev/null %	
 " Tab spaces
 set tabstop=4 
+" ColorSchema
+set background=dark
+colorscheme jellybeans
