@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/fetch
+~MSle0~/$compile_dir
 
 # Last Substitute Search Pattern:
 ~MSle0&#
@@ -17,26 +17,39 @@
 $"
 
 # Command Line History (newest to oldest):
-:wq
 :q
-:q!
+:pwd
+:w !sudo tee > /dev/null %	
 :w
-:x
+:e /etc/hosts
+:sp /etc/host.conf
+:e ~/.vimrc
+:e
+:sp
+:/GetChart
 :s
-:Q!
-:!dir
-:%s/#/"/gc
-:s/#/"/g
-:w .vimrc
-:set nopaste
-:set paste 
-:set rnu
-:e!
-:e .tmux.conf
-:qall
-:set paste
+:ls
+:wq
+:hi Search
+:set bg?
+:colorscheme peachpuff
+:colorscheme murphy
+:colorscheme elflord
+:colorscheme desert
+:colorscheme jellybeans
 
 # Search String History (newest to oldest):
+?/$Stmt
+?/fetchAll
+?/Get
+? GetChart
+?/GetChart
+?/$compile_dir
+?/assign
+?/asign
+?/set
+?/detail
+? \<set\>
 ?/fetch
 ?/recv
 ?/hide
@@ -46,15 +59,6 @@ $"
 ?/reload
 ?/Zillow
 ?/zillow
-?/Cyber
-?/home
-?/parse
-?/MakeCacheSearchKey
-?/Controller
-?/GetApis
-?/MemcachePrefix
-?/MakeCacheResponseKey
-?/request
 
 # Expression History (newest to oldest):
 
@@ -66,39 +70,69 @@ $"
 "0	CHAR	0
 	Tem
 "1	LINE	0
-	
+	set-option -g status-position top
 "2	LINE	0
-	setw -g window-status-content-attr bold,blink,reverse
+	set-option -g status-position top
 "3	LINE	0
-	[fg=white,bold]bg=cyan] [#W] "
+	set -g status-justify centre
 "4	LINE	0
-	setw -g window-status-content-attr bold,blink,reverse
+	colorscheme jellybeans
 "5	LINE	0
-	[fg=white,bold]bg=cyan] [#W] "
+	set -g status-position top
 "6	LINE	0
-	setw -g window-status-current-format "#[bg=brightmagenta]#[fg=white] *#I #
+	
 "7	LINE	0
-	white] #W "
+	set -g status-position top
 "8	LINE	0
-		www.
+	
 "9	LINE	0
-		www.
+	setw -g window-status-content-attr bold,blink,reverse
 ""-	CHAR	0
-	]
+	p
 
 # File marks:
-'0  2  47  ~/.bashrc
-'1  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/HomeValueDataFetcher.inc
-'2  92  2  /etc/varnish/default.vcl
-'3  112  0  /etc/sysconfig/varnish
-'4  1  0  /etc/varnish/default.vcl
-'5  1  0  ~/.tmux.conf
-'6  53  27  ~/.tmux.conf
-'7  11  33  ~/.tmux.conf
-'8  12  0  ~/.tmux.conf
-'9  217  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/RabcHVController.inc
+'0  3  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+'1  5  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+'2  295  5  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+'3  82  8  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+'4  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/internals/core.write_compiled_include.php
+'5  1  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+'6  17  13  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+'7  295  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+'8  58  0  ~/.tmux.conf
+'9  1  0  ~/.tmux.conf
 
 # Jumplist (newest first):
+-'  3  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+-'  5  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+-'  295  5  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  82  8  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  106  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  83  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  81  4  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/internals/core.write_compiled_include.php
+-'  17  13  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+-'  295  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  272  29  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  282  45  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  20  25  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  58  0  ~/.tmux.conf
+-'  1  0  ~/.tmux.conf
+-'  3  0  ~/.tmux.conf
+-'  57  139  ~/.tmux.conf
+-'  1  0  ~/.local/bin/tmux
+-'  53  0  ~/.tmux.conf
+-'  2  0  ~/.tmux.conf
+-'  1  0  ~/.vimrc
+-'  21  16  ~/.vimrc
+-'  1  0  ~/.vim/colors/jellybeans.vim
+-'  1  0  ~/.vim/colors/jellybean.vim
+-'  20  0  ~/.vimrc
+-'  5  0  ~/.tmux.conf
+-'  1  0  ~/vim.sh
 -'  2  47  ~/.bashrc
 -'  1  0  ~/.bashrc
 -'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/HomeValueDataFetcher.inc
@@ -111,12 +145,8 @@ $"
 -'  1  0  /etc/sysconfig/varnish
 -'  124  0  /etc/varnish/default.vcl
 -'  61  0  /etc/varnish/default.vcl
--'  1  0  ~/.tmux.conf
--'  53  27  ~/.tmux.conf
--'  11  33  ~/.tmux.conf
--'  12  0  ~/.tmux.conf
--'  58  0  ~/.tmux.conf
--'  60  0  ~/.tmux.conf
+-'  12  33  ~/.tmux.conf
+-'  13  0  ~/.tmux.conf
 -'  217  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/RabcHVController.inc
 -'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/RabcHVController.inc
 -'  13  3  /var/www/sites/REABC-09.05.11.00-PROD/includes/____debug_funciton.php
@@ -130,7 +160,7 @@ $"
 -'  26  5  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/seobox.tpl
 -'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/seobox.tpl
 -'  31  0  /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/seobox.tpl
--'  19  28  ~/.tmux.conf
+-'  20  28  ~/.tmux.conf
 -'  10  0  /var/www/conf/rabc_com_hv.ini
 -'  1  0  /var/www/conf/rabc_com_hv.ini
 -'  1  0  /var/www/.bashrc
@@ -139,10 +169,10 @@ $"
 -'  1  0  ~/.bash_profile
 -'  7  0  ~/.gitignore
 -'  1  0  ~/.gitignore
--'  28  0  ~/.tmux.conf
 -'  29  0  ~/.tmux.conf
--'  38  0  ~/.tmux.conf
--'  36  0  ~/.tmux.conf
+-'  30  0  ~/.tmux.conf
+-'  39  0  ~/.tmux.conf
+-'  37  0  ~/.tmux.conf
 -'  3  5  ~/.gitignore
 -'  6  14  ~/.gitignore
 -'  58  19  /etc/group
@@ -150,54 +180,258 @@ $"
 -'  13  11  /etc/hosts
 -'  1  0  /etc/hosts
 -'  14  0  /etc/hosts
--'  5  4  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  9  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  14  22  ~/.vimrc
--'  4  0  ~/.vimrc
--'  12  10  ~/.vimrc
--'  11  0  ~/.vimrc
--'  1  0  ~/test
--'  8  35  ~/.vimrc
--'  8  0  ~/.ssh/config
--'  10  20  ~/.ssh/config
--'  11  10  ~/.ssh/config
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  11  76  /etc/hosts
--'  17  0  /etc/hosts
--'  15  0  /etc/hosts
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  6  20  ~/.ssh/config
--'  7  10  ~/.ssh/config
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  2  0  /tmp/demo
--'  1  0  /tmp/demo
--'  5  4  ~/.ssh/config
--'  5  4  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  9  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  14  22  ~/.vimrc
--'  4  0  ~/.vimrc
--'  12  10  ~/.vimrc
--'  11  0  ~/.vimrc
--'  1  0  ~/test
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/internals/core.write_compiled_include.php
+-'  295  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  272  29  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  282  45  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  20  25  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+-'  58  0  ~/.tmux.conf
 -'  1  0  ~/.tmux.conf
--'  92  2  /etc/varnish/default.vcl
+-'  3  0  ~/.tmux.conf
+-'  57  139  ~/.tmux.conf
+-'  1  0  ~/.local/bin/tmux
+-'  53  0  ~/.tmux.conf
+-'  2  0  ~/.tmux.conf
+-'  1  0  ~/.vimrc
+-'  21  16  ~/.vimrc
+-'  72  2  /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+-'  54  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+-'  58  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+-'  96  19  /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+-'  95  3  /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+-'  1  0  /var/www/sites/REABC-09.05.11.00-PROD/includes/dao/base/loan_com/BaseAvgRateDailyHistoryDAO.inc
 
 # History of marks within files (newest to oldest):
+
+> /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/detailsPage/rateTrendsTable.tpl
+	"	3	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/dao/base/loan_com/BaseAvgRateDailyHistoryDAO.inc
+	"	1	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/dao/extended/loan_com/AvgRateDailyHistoryDAO.inc
+	"	1	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/RateChart.inc
+	"	62	0
+	^	4	0
+	.	4	0
+	+	4	0
+
+> ~/.vimrc
+	"	1	0
+	^	4	6
+	.	4	5
+	+	21	0
+	+	5	6
+	+	12	18
+	+	5	28
+	+	5	67
+	+	12	74
+	+	15	0
+	+	12	72
+	+	15	49
+	+	10	36
+	+	5	30
+	+	12	34
+	+	5	12
+	+	7	18
+	+	10	19
+	+	12	17
+	+	14	23
+	+	15	32
+	+	7	0
+	+	14	0
+	+	5	0
+	+	7	0
+	+	10	0
+	+	12	0
+	+	14	0
+	+	15	0
+	+	7	0
+	+	5	0
+	+	6	11
+	+	7	0
+	+	10	18
+	+	8	17
+	+	8	17
+	+	9	0
+	+	12	16
+	+	10	18
+	+	10	18
+	+	11	0
+	+	14	22
+	+	12	16
+	+	13	0
+	+	15	0
+	+	5	0
+	+	7	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	15	0
+	+	10	12
+	+	8	10
+	+	16	31
+	+	18	22
+	+	20	0
+	+	26	0
+	+	25	20
+	+	2	12
+	+	5	0
+	+	4	5
+
+> /etc/host.conf
+	"	1	0
+
+> /etc/hosts
+	"	6	0
+	^	6	0
+	.	6	0
+	+	6	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/Smarty.class.php
+	"	295	5
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/smarty-lib/internals/core.write_compiled_include.php
+	"	1	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/Search.inc
+	"	295	0
+
+> ~/.gitconfig
+	"	3	2
+	^	3	9
+	.	3	8
+	+	3	8
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/ApplicationController.inc
+	"	2	0
+
+> /var/www/sites/REABC-09.05.11.00-PROD/includes/actions/HomeValues.inc
+	"	1	0
+
+> ~/.tmux.conf
+	"	58	0
+	^	58	1
+	.	58	0
+	+	21	396
+	+	26	0
+	+	21	704
+	+	21	396
+	+	21	455
+	+	21	702
+	+	21	674
+	+	21	932
+	+	21	381
+	+	21	395
+	+	21	605
+	+	21	381
+	+	21	17
+	+	21	14
+	+	21	304
+	+	21	298
+	+	21	380
+	+	21	170
+	+	21	272
+	+	21	1151
+	+	21	1050
+	+	21	1050
+	+	25	0
+	+	21	976
+	+	21	29
+	+	21	45
+	+	21	70
+	+	21	85
+	+	21	110
+	+	21	111
+	+	21	117
+	+	21	166
+	+	21	187
+	+	21	215
+	+	21	243
+	+	21	273
+	+	21	274
+	+	21	285
+	+	21	298
+	+	21	305
+	+	21	318
+	+	21	346
+	+	21	380
+	+	21	381
+	+	21	394
+	+	21	401
+	+	21	415
+	+	21	497
+	+	21	604
+	+	21	658
+	+	21	659
+	+	21	674
+	+	21	687
+	+	21	703
+	+	21	737
+	+	21	760
+	+	21	782
+	+	21	804
+	+	21	975
+	+	21	976
+	+	21	976
+	+	21	1007
+	+	21	1049
+	+	21	1050
+	+	21	1094
+	+	21	1150
+	+	23	0
+	+	59	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	17	0
+	+	11	33
+	+	12	0
+	+	16	0
+	+	21	0
+	+	53	27
+	+	12	0
+	+	53	3
+	+	52	15
+	+	53	0
+	+	58	33
+	+	58	33
+	+	58	33
+	+	58	33
+	+	53	0
+	+	1	0
+	+	58	33
+	+	1	0
+	+	58	33
+	+	59	0
+	+	58	0
+
+> ~/.local/bin/tmux
+	"	1	0
+
+> ~/.vim/colors/jellybeans.vim
+	"	1	0
+
+> ~/.vim/colors/jellybean.vim
+	"	1	0
+
+> ~/vim.sh
+	"	1	0
+	^	3	0
+	.	3	0
+	+	1	0
+	+	1	11
+	+	36	0
+	+	17	0
+	+	4	0
+	+	7	0
+	+	3	0
+
+> ~/tmux.sh
+	"	39	0
 
 > ~/.bashrc
 	"	2	47
@@ -224,89 +458,6 @@ $"
 > /etc/sysconfig/varnish
 	"	112	0
 
-> ~/.tmux.conf
-	"	1	0
-	^	53	28
-	.	11	0
-	+	20	396
-	+	25	0
-	+	20	704
-	+	20	396
-	+	20	455
-	+	20	702
-	+	20	674
-	+	20	932
-	+	20	381
-	+	20	395
-	+	20	605
-	+	20	381
-	+	20	17
-	+	20	14
-	+	20	304
-	+	20	298
-	+	20	380
-	+	20	170
-	+	20	272
-	+	20	1151
-	+	20	1050
-	+	20	1050
-	+	24	0
-	+	20	976
-	+	20	29
-	+	20	45
-	+	20	70
-	+	20	85
-	+	20	110
-	+	20	111
-	+	20	117
-	+	20	166
-	+	20	187
-	+	20	215
-	+	20	243
-	+	20	273
-	+	20	274
-	+	20	285
-	+	20	298
-	+	20	305
-	+	20	318
-	+	20	346
-	+	20	380
-	+	20	381
-	+	20	394
-	+	20	401
-	+	20	415
-	+	20	497
-	+	20	604
-	+	20	658
-	+	20	659
-	+	20	674
-	+	20	687
-	+	20	703
-	+	20	737
-	+	20	760
-	+	20	782
-	+	20	804
-	+	20	975
-	+	20	976
-	+	20	976
-	+	20	1007
-	+	20	1049
-	+	20	1050
-	+	20	1094
-	+	20	1150
-	+	22	0
-	+	61	0
-	+	1	0
-	+	6	0
-	+	1	0
-	+	16	0
-	+	10	33
-	+	11	0
-	+	15	0
-	+	20	0
-	+	53	27
-	+	11	0
-
 > /var/www/sites/REABC-09.05.11.00-PROD/includes/RabcHVController.inc
 	"	217	0
 
@@ -324,21 +475,6 @@ $"
 
 > /var/www/sites/REABC-09.05.11.00-PROD/includes/ZillowDataClass.inc
 	"	67	4
-
-> ~/tmux.sh
-	"	9	0
-
-> ~/vim.sh
-	"	3	0
-	^	3	0
-	.	3	0
-	+	1	0
-	+	1	11
-	+	36	0
-	+	17	0
-	+	4	0
-	+	7	0
-	+	3	0
 
 > /var/www/sites/REABC-09.05.11.00-PROD/includes/CyberHomesDataClass.inc
 	"	270	45
@@ -369,61 +505,3 @@ $"
 
 > /var/www/sites/REABC-09.05.11.00-PROD/smarty/templates/seobox.tpl
 	"	26	5
-
-> ~/.vimrc
-	"	16	13
-	^	16	14
-	.	16	0
-	+	17	0
-	+	1	6
-	+	8	18
-	+	1	28
-	+	1	67
-	+	8	74
-	+	11	0
-	+	8	72
-	+	11	49
-	+	6	36
-	+	1	30
-	+	8	34
-	+	1	12
-	+	3	18
-	+	6	19
-	+	8	17
-	+	10	23
-	+	11	32
-	+	3	0
-	+	10	0
-	+	1	0
-	+	3	0
-	+	6	0
-	+	8	0
-	+	10	0
-	+	11	0
-	+	3	0
-	+	1	0
-	+	2	11
-	+	3	0
-	+	6	18
-	+	4	17
-	+	4	17
-	+	5	0
-	+	8	16
-	+	6	18
-	+	6	18
-	+	7	0
-	+	10	22
-	+	8	16
-	+	9	0
-	+	11	0
-	+	1	0
-	+	3	0
-	+	5	0
-	+	7	0
-	+	9	0
-	+	11	0
-	+	6	12
-	+	4	10
-	+	12	31
-	+	14	22
-	+	16	0
