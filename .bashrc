@@ -9,5 +9,9 @@ alias cd..='cd ..'
 alias myip='curl ip.appspot.com'
 alias ls='ls -la'
 alias fgrep='grep -rin --include="*.php" --include="*.inc" --include="*.tpl"'
-alias tmux='~/.local/bin/tmux -2'
-alias vim='~/.local/bin/vim'
+if [ -f ~/.local/bin/tmux ]; then
+	alias tmux='~/.local/bin/tmux -2'
+fi
+if [ -f ~/.local/bin/vim ]; then
+	vim alias='~/.local/bin/vim'
+fi
