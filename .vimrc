@@ -1,3 +1,7 @@
+" Highlighting search matches
+:set hlsearch
+" Highlighting color
+:set t_Co=8
 "Syntaxis mode on
 :syntax on
 " Show line numbers
@@ -18,4 +22,4 @@ cmap w!! w !sudo tee > /dev/null %
 set tabstop=4 
 " ColorSchema
 set background=dark
-colorscheme slate
+colorscheme peachpuff 
