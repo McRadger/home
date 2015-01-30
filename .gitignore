@@ -1,9 +1,10 @@
 /*
 /*/
-.viminfo
+/.viminfo
 !/.vim/
 !/.vimrc
 !/.bash_profile
 !/.tmux.conf
 !/.gitignore
 !/.bashrc
+!/bin/
