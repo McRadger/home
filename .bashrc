@@ -1,5 +1,5 @@
 
-PS1='\[\e[1;32m\]\u@\[\e[1;35m\]\h:\[\e[1;34m\]\W\$ '
+PS1='\[\e[1;32m\]\u@\[\e[1;35m\]\h:\[\e[1;34m\]\W\$ \[\e[1;37m\]'
 
 #------------------------------------------------
 # ALIAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -9,5 +9,18 @@ alias cd..='cd ..'
 alias myip='curl ip.appspot.com'
 alias ls='ls -la'
 alias fgrep='grep -rin --include="*.php" --include="*.inc" --include="*.tpl"'
-alias tmux='~/.local/bin/tmux -2'
-alias vim='~/.local/bin/vim'
+if [ -f ~/.local/bin/tmux ]; then
+	alias tmux='~/.local/bin/tmux -2'
+fi
+if [ -f ~/.local/bin/vim ]; then
+	vim alias='~/.local/bin/vim'
+fi
+alias colalogs='find /var/log/httpd/ -iname "*log" | xargs sudo  tail -f | ccze -A'
+
+SCRIPT="$HOME/bin/tns_oracle_script.sh"
+
+if [ -f $SCRIPT ]; then
+		source "$SCRIPT"
+else
+		echo "Script not found on $SCRIPT "
+fi;

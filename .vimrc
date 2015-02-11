@@ -22,4 +22,5 @@ cmap w!! w !sudo tee > /dev/null %
 set tabstop=4 
 " ColorSchema
 set background=dark
-colorscheme peachpuff 
+colorscheme molokai-transparent
+
