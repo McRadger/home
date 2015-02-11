@@ -8,3 +8,9 @@
 !/.gitignore
 !/.bashrc
 !/bin/
+/home/.vim/.netrwhist
+/home/.vim/tmp
+*.swo
+*.swp
+home/.vim/bundle/**
+home/.vim/bundle/vundle
