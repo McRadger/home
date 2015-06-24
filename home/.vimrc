@@ -57,7 +57,7 @@ filetype plugin indent on    " required
 " Highlighting search matches
 :set hlsearch
 " Highlighting color
-:set t_Co=8
+:set t_Co=256
 "Syntaxis mode on
 :syntax on
 " Show line numbers

@@ -28,3 +28,5 @@ if [ -f $SCRIPT ]; then
 else
 		echo "Script not found on $SCRIPT "
 fi;
+
+export TERM=xterm-256color
