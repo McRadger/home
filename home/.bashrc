@@ -21,7 +21,7 @@ if [ -f ~/.local/bin/vim ]; then
 fi
 alias colalogs='find /var/log/httpd/ -iname "*log" | xargs sudo  tail -f | ccze -A'
 
-SCRIPT="$HOME/bin/tns_oracle_script.sh"
+SCRIPT="$HOME/dotfiles/bin/tns_oracle_script.sh"
 
 if [ -f $SCRIPT ]; then
 		source "$SCRIPT"
@@ -30,3 +30,7 @@ else
 fi;
 
 export TERM=xterm-256color
+
+alias ls="ls --color"
+alias ll="ls -alh --color"
+
