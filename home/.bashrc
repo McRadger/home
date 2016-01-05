@@ -21,7 +21,7 @@ if [ -f ~/.local/bin/vim ]; then
 fi
 alias colalogs='find /var/log/httpd/ -iname "*log" | xargs sudo  tail -f | ccze -A'
 
-SCRIPT="$HOME/dotfiles/bin/tns_oracle_script.sh"
+SCRIPT="$HOME/home/bin/tns_oracle_script.sh"
 
 if [ -f $SCRIPT ]; then
 		source "$SCRIPT"
