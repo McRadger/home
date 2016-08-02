@@ -75,9 +75,11 @@ filetype plugin indent on    " required
 "If forget make sudo before open a file
 cmap w!! w !sudo tee > /dev/null %	
 " Tab spaces
-set tabstop=4 
+set tabstop=4
+" Identing with 4 spaces width
+set shiftwidth=4
 " ColorSchema
 set background=dark
-colorscheme molokai-transparent
+"colorscheme molokai-transparent
 set rnu
 
